@@ -93,15 +93,13 @@ const longestStringInArray = (myArray) => {
 // 9.
 function stringsLongerThan(myArray, num) {
   const stringArray = []
-  let n = 0
   for (string of myArray) {
     if (string.length > num) {
-      stringArray[n] = string
-      n++
+      stringArray.push(string)
     }
   }
   return stringArray
 }
 
-// console.log(stringsLongerThan(['say', 'hello', 'in', 'the', 'morning'], 3))
+console.log(stringsLongerThan(['say', 'hello', 'in', 'the', 'morning'], 3))
 
