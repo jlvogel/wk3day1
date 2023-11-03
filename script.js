@@ -61,7 +61,13 @@ function multiplyArray(myArray) {
 // console.log(multiplyArray([4,3,5]))
 
 // 6.
-const reverseString = (myString) => {
+const numArgs = (...args) => {
+  return args.length
+}
+// console.log(numArgs(3, 'h', [1, 8], 10))
+
+// 7.
+function reverseString(myString) {
   let s = ''
   for (i = myString.length -1; i >=0; i--) {
     s += myString[i]
@@ -70,4 +76,3 @@ const reverseString = (myString) => {
 }
 
 // console.log(reverseString("Howdy"))
-
