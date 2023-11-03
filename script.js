@@ -76,3 +76,32 @@ function reverseString(myString) {
 }
 
 // console.log(reverseString("Howdy"))
+
+// 8.
+const longestStringInArray = (myArray) => {
+  s = ''
+  for (string of myArray) {
+    if (string.length > s.length) {
+      s = string
+    }
+  }
+  return s
+}
+
+// console.log(longestStringInArray(['Merry Christmas!', 'pineapple juice', 'Happy New Year!!!!', 'peanut butter', 'bun']))
+
+// 9.
+function stringsLongerThan(myArray, num) {
+  const stringArray = []
+  let n = 0
+  for (string of myArray) {
+    if (string.length > num) {
+      stringArray[n] = string
+      n++
+    }
+  }
+  return stringArray
+}
+
+// console.log(stringsLongerThan(['say', 'hello', 'in', 'the', 'morning'], 3))
+
